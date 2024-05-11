@@ -12,26 +12,28 @@ body {
     /* Text align is horizontal*/
     text-align: center;
     /* align items is vertical */
+    justify-content: center;
 }
+
 header {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
 
 }
 
 .logo {
-    height: 150px;
     width: 150px;
+    height: 150px;
     background-color: var(--grey);
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: solid black;
+    border: 5px solid black;
     border-radius: 50%;
-    
 }
 
 .logo p {
@@ -49,5 +51,6 @@ nav a {
     padding: 0.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    
+
 }
+
