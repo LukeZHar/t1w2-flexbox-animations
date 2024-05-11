@@ -53,8 +53,18 @@ nav a {
     margin-right: 0.5rem;
 
 }
+@keyframes spin {
+    0%   {background-color: red; transform: rotate(0deg);}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue; transform: rotate(90deg);}
+    75%  {background-color: purple;}
+    100% {background-color: green; transform: rotate(180deg);} 
+             
+}
 nav a:hover {
     background-color: purple;
+    animation-name: spin;
+    animation-duration: 5s;
 }
 
 .training-option {
@@ -79,9 +89,25 @@ nav a:hover {
         text-align: center;
         align-items: center;
     }
+
     nav a {
         font-size: 1.5rem; 
     }
+
+    @keyframes spin {
+        0%   {background-color: red; transform: rotate(0deg);}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue; transform: rotate(90deg);}
+        75%  {background-color: purple;}
+        100% {background-color: green; transform: rotate(180deg);} 
+    }
+
+    nav a:hover {
+        background-color: purple;
+        animation-name: spin;
+        animation-duration: 5s;
+    }
+
     .training-option {
         margin-top: 5dvw;
 
@@ -90,4 +116,5 @@ nav a:hover {
         width: 400px;
         height: 400px;
     }
+
 }
